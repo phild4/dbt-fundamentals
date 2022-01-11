@@ -25,6 +25,7 @@ final as (
     select
           orders.order_id
         , customer_id
+        , orders.order_date
         , order_payments.amount as amount
     from
         orders
