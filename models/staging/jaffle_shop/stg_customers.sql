@@ -4,4 +4,4 @@ select
     , last_name
 
 from
-    dbt-tutorial.jaffle_shop.customers
+    {{ source('jaffle_shop', 'customers') }}
